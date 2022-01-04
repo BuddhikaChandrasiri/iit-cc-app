@@ -11,6 +11,8 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule} from '@angular/common/http';
 import { CommonModule } from "@angular/common";
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -26,8 +28,10 @@ import { CommonModule } from "@angular/common";
     MatMenuModule,
     MatCardModule,
     HttpClientModule,
-    CommonModule
-    
+    CommonModule,
+    MatProgressBarModule,
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
