@@ -12,7 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule} from '@angular/common/http';
 import { CommonModule } from "@angular/common";
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-import {MatIconModule} from '@angular/material/icon';
+// import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -29,8 +29,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     HttpClientModule,
     CommonModule,
-    MatProgressBarModule,
-    MatIconModule
+    MatProgressBarModule
 
   ],
   providers: [],

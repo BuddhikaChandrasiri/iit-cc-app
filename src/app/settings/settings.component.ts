@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient, HttpEventType, HttpResponse, HttpRequest, HttpHeaders } from '@angular/common/http'; 
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-import {MatIconModule} from '@angular/material/icon';
+// import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-settings',

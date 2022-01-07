@@ -1,6 +1,30 @@
-<H3>Home</H3>
-<div>
+<!-- <h3>Home</h3> -->
+<!-- <div>
     <div *ngFor="let image of imageList">
         <img src={{image}} width="400" height="450" />
     </div>
-</div>
+</div> -->
+<!-- <div class="container" *ngIf="imageList">
+    <div
+      class="row justify-content-around align-items-center"
+      Style="height: 80vh; width:75vh">
+      <div
+        class="col-lg-3 col-md-6 col-sm-12 border m-3"
+        style="height:40vh"
+        *ngFor="let item of imageList"
+      >
+        <img src="{{ item }}" alt="" />
+      </div>f
+    </div>
+  </div> -->
+<section class="section">
+  <div *ngFor="let image of imageList">
+    <div class="gallery">
+      <a target="_blank" href="{{image}}">
+        <img src="{{image}}" alt="Cinque Terre" width="600" height="400">
+      </a>
+      <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+</section>
+  

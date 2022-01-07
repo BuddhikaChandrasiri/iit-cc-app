@@ -1,35 +1,67 @@
-<mat-card>IIT Cloud Computing Demo Application</mat-card>
+<!-- <div class="header">
+    <h1>Image Gallery</h1>
+    <p>Smple images</p>
+</div>  -->
+<header>
+	<div class="overlay">
+<h1>Simple Image Gallery</h1>
+<h3>Reasons for Choosing US</h3>
+<p>“A good approach to writing about your own photographs is to write around them instead of about them. As I noted earlier, your viewers aren’t blind, so don’t tell them what they see. Don’t tell them what you want them to see, either. If someone doesn’t see that, but something else – then what? Do you want to limit what people can get out of your pictures?
 
-<mat-tab-group>
-  <mat-tab>
-    <ng-template mat-tab-label>
-        <button mat-icon-button (click)="clickHomeBtn()" [matMenuTriggerFor]="Menu" class="cloneIcon">
-            <mat-icon>Home</mat-icon>
-        </button>
-        {{label}}
-    </ng-template>
+  Writing around your pictures means producing a piece of writing that conveys very similar ideas than your pictures, albeit in other ways. Maybe you’ll add some things that are inexpressible in pictures. Writing around your pictures means that you’ll add a bit of your own personality, of where you’re coming from. You’re going to be showing your viewers a different angle from which they can approach you”</p>
+	<br>
+	<button (click)="clickHomeBtn()">GALLERY</button> &nbsp;
+  <button (click)="clickSettingsBtn()">UPLOAD</button>
+		</div>
+</header>
 
-<!-- <mat-menu #Menu="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-</mat-menu> -->
 
-  </mat-tab>
-  <mat-tab>
-    <ng-template mat-tab-label>
-        <button mat-icon-button (click)="clickSettingsBtn()" [matMenuTriggerFor]="Menu" class="cloneIcon">
-            <mat-icon>Settings</mat-icon>
-        </button>
-        {{label}}
-    </ng-template>
-
-<!-- <mat-menu #Menu="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-</mat-menu> -->
-
-  </mat-tab>
-</mat-tab-group>
+<!-- <div class="headergap">
+    <mat-tab-group>
+        <br />
+        <mat-tab>
+          <ng-template mat-tab-label>
+              <button mat-icon-button (click)="clickHomeBtn()" [matMenuTriggerFor]="Menu" class="cloneIcon">
+                  Home
+              </button>
+              {{label}}
+          </ng-template>
+      
+      <mat-menu #Menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+      </mat-menu> 
+      
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+              <button mat-icon-button (click)="clickSettingsBtn()" [matMenuTriggerFor]="Menu" class="cloneIcon">
+                  Settings
+              </button>
+              {{label}}
+          </ng-template>
+      
+      <mat-menu #Menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+      </mat-menu>
+      
+        </mat-tab>
+      </mat-tab-group>
+</div> -->
 
 
 <router-outlet></router-outlet>
+
+<div class="footer">
+    <ul>
+      <li><a href="https://twitter.com/">Twitter</a></li>
+      <li><a href="https://codepen.io/">Codepen</a></li>
+      <li><a href="mailto:test@gmail.com">Email</a></li>
+      <!-- <li><a href="https://dribbble.com/">Dribbble</a></li> -->
+      <li><a href="https://github.com/">Github</a></li>
+      <li>
+        <p>👋</p>
+      </li>
+    </ul>
+  </div>
