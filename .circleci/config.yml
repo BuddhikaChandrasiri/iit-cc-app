@@ -22,4 +22,3 @@ workflows:
           filters:
             branches:
               only: dev
-
