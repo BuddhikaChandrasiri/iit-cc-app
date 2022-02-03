@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  BASE_URL: 'http://ec2-18-218-186-217.us-east-2.compute.amazonaws.com:4000'
+  BASE_URL: 'http://localhost:4000'
 };
 
 /*
