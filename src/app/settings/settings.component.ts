@@ -42,10 +42,11 @@ export class SettingsComponent implements OnInit {
     });
 
     this.http.request(newRequest).subscribe(event => {
+      console.log(event);
       if (event.type === HttpEventType.UploadProgress) {
         this.progress.percentage = Math.round(100 * event.loaded / event.total);
       } else if (event instanceof HttpResponse) {
-         alert('File Successfully Uploaded');
+        alert('File Successfully Uploaded');
       }
     });
     this.selectedFiles = undefined;
